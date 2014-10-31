@@ -11,7 +11,7 @@ class TotalVariationDenoising(object):
   #    lam  - fidelity term lambda [0],
   #    I0   - input (noisy) image [I0=I]
   #     (default values are in [])
-  def __init__(self, I, iter, ep=1.0, dt=None, lam=0.0, I0=None, C=0.0):
+  def __init__(self, I, iter=80, ep=1.0, dt=None, lam=0.0, I0=None, C=0.0):
     super(TotalVariationDenoising, self).__init__()
     self.I = I
     self.iter = iter
