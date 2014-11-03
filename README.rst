@@ -1,41 +1,44 @@
 py-tvd
 ======
 
-This is a Python implementation of `Total Variation Denoising`_ method
-proposed by Guy Gilboa. >Reduces the total-variation of the image.
-Filters out noise while preserving edges. Textures and fine-scale
-details are also removed.
+This is a Python implementation of `Total Variation Denoising`_ method proposed by Guy Gilboa.
+
+    Reduces the total-variation of the image.
+    Filters out noise while preserving edges. Textures and fine-scale details are also removed.
 
 Requirements
 ------------
 
 To run this code you need the following packages:
 
--  `Python 2.7`_
--  `OpenCV`_
 -  `Numpy`_
--  `numexpr`_
+-  `Numexpr`_
+-  `OpenCV`_ (Optional)
 
-Maybe it should work also on other version of python, but it’s untested.
-
-**Everything but OpenCV can be installed via
-``pip install -r requirements``**
+**Everything but OpenCV can be installed via ``pip install -r requirements``**
 
 Installation
 ------------
 
-To install everything just run:
+To install everything just type:
+
+.. code:: shell
+
+    pip install py-tvd
+
+
+For manual installation:
 
 .. code:: shell
 
     python setup.py install
 
-Maybe you have to run it with ``sudo``.
+Probably you have to run it with ``sudo``.
 
 Testing
 -------
 
-Test are provided via ```unittest```_.
+Test are provided via `unittest`_.
 
 To run them all:
 
@@ -62,15 +65,10 @@ Examples
 
 The conversion to *YCbCr* color space is optionally (sure?)
 
-Final Notes
------------
-
-This library is already in development, so don’t use it for **real**
-purposes.
 
 .. _Total Variation Denoising: http://visl.technion.ac.il/~gilboa/PDE-filt/tv_denoising.html
 .. _Python 2.7: https://www.python.org/download/releases/2.7/
 .. _OpenCV: http://opencv.org/
 .. _Numpy: http://www.numpy.org/
 .. _numexpr: https://github.com/pydata/numexpr
-.. _``unittest``: https://docs.python.org/2/library/unittest.html
+.. _unittest: https://docs.python.org/2/library/unittest.html

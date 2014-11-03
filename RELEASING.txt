@@ -1,5 +1,5 @@
 ==================
-Releasing Numexpr
+Releasing py-tvd
 ==================
 
 :Author: Piero Dotti, Paolo Guglielmini
@@ -7,7 +7,7 @@ Releasing Numexpr
 :Date: 2014-11-02
 
 
-Following are notes useful for releasing Numexpr.
+Following are notes useful for releasing py-tvd.
 
 Preliminaries
 -------------
