@@ -4,21 +4,20 @@ python:
   - "2.7"
   - "3.3"
   - "3.4"
+virtualenv:
+  system_site_packages: true
 before_install:
  - sudo apt-get update
  - sudo apt-get install python-opencv
  - sudo dpkg -L python-opencv
  - sudo apt-get install libboost-all-dev
  - sudo dpkg -L libboost-all-dev
- #http://stackoverflow.com/questions/7496547/python-scipy-needs-blas
- - sudo apt-get install gfortran libopenblas-dev liblapack-dev
+ - sudo apt-get install -qq python-numpy python-scipy
 # command to install dependencies
 install:
- - pip install numpy
  - pip install .
  # Testing requirements
  - pip install nose > /dev/null
- - pip install scipy > /dev/null
  - echo "Installation complete!"
 # command to run tests
 script:
