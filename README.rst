@@ -1,3 +1,6 @@
+.. image:: https://travis-ci.org/PNProductions/py-tvd.svg?branch=master
+    :target: https://travis-ci.org/PNProductions/py-tvd
+
 py-tvd
 ======
 
