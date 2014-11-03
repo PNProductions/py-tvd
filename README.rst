@@ -20,6 +20,8 @@ To run this code you need the following packages:
 
 **Everything but OpenCV can be installed via ``pip install -r requirements``**
 
+Because of OpenCV, this code will run only with python 2.6 and 2.7.
+
 Installation
 ------------
 
@@ -73,5 +75,5 @@ The conversion to *YCbCr* color space is optionally (sure?)
 .. _Python 2.7: https://www.python.org/download/releases/2.7/
 .. _OpenCV: http://opencv.org/
 .. _Numpy: http://www.numpy.org/
-.. _numexpr: https://github.com/pydata/numexpr
+.. _Numexpr: https://github.com/pydata/numexpr
 .. _unittest: https://docs.python.org/2/library/unittest.html
