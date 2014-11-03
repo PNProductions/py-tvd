@@ -12,12 +12,13 @@ before_install:
  - sudo dpkg -L python-opencv
  - sudo apt-get install libboost-all-dev
  - sudo dpkg -L libboost-all-dev
- - sudo apt-get install -qq python-numpy python-scipy
 # command to install dependencies
 install:
+ - pip install numpy
  - pip install .
  # Testing requirements
  - pip install nose > /dev/null
+ - pip install scipy
  - echo "Installation complete!"
 # command to run tests
 script:
