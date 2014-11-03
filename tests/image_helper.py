@@ -27,7 +27,6 @@ def to_matlab_ycbcr(image):
 
 def from_matlab_ycbcr(image):
   # http://stackoverflow.com/questions/26078281/why-luma-parameter-differs-in-opencv-and-matlab
-  # return clip(image * (255 / 219.0) - 16, 0, 255)
   return clip(image * (255 / 219.0) - 16, 0, 255)
 
 
